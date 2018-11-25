@@ -1,0 +1,13 @@
+TargetRubyVersion: 2.5.1
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented_relative_to_receiver
+
+Style/Documentation:
+  Enabled: false
+
+Style/DotPosition:
+  EnforcedStyle: trailing
+
+Metrics/LineLength:
+  Max: 120
