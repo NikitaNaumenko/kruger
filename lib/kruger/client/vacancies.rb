@@ -4,8 +4,11 @@ module Kruger
   class Client
     module Vacancies
       def vacancies
-        response = self.class.get('/vacancies', query: { access_token: @access_token })
-        response.parsed_response['vacancies']
+        get('/vacancies', query: { access_token: @access_token })
+      end
+
+      def responses(vacancy_id:)
+        get("vacancies/#{vacancy_id}/responses", query: { access_token: @access_token })
       end
     end
   end

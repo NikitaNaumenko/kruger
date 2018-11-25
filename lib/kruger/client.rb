@@ -5,6 +5,9 @@ require './lib/kruger/client/users'
 require './lib/kruger/client/request'
 require './lib/kruger/client/response'
 require './lib/kruger/client/skills'
+require './lib/kruger/client/cities'
+require './lib/kruger/client/companies'
+require './lib/kruger/client/divisions'
 
 module Kruger
   class Client
@@ -15,6 +18,10 @@ module Kruger
     include Kruger::Client::Users
     include Kruger::Client::Skills
     include Kruger::Client::Request
+    include Kruger::Client::Divisions
+    include Kruger::Client::Companies
+    include Kruger::Client::Cities
+
     base_uri MOI_KRUG_API_URL
     format :json
 
