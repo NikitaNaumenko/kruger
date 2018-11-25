@@ -56,7 +56,7 @@ RSpec.describe Kruger::Client::Request do
 
     it { is_expected.to be_instance_of(Kruger::Client::Response) }
     it { expect(subject.body['skills']).to be_instance_of(Array) }
-    it { expect(subject.body['skills'].length).to eq(9) }
+     it { expect(subject.body['skills'].length).to eq(2) }
     it { expect(subject.body['skills'].first).to eq(response['skills'].first) }
     it { expect(subject.body['skills'].last).to eq(response['skills'].last) }
   end
