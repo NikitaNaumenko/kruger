@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
-require './lib/kruger/client/vacancies'
-require './lib/kruger/client/users'
-require './lib/kruger/client/request'
-require './lib/kruger/client/response'
-require './lib/kruger/client/skills'
-require './lib/kruger/client/cities'
-require './lib/kruger/client/companies'
-require './lib/kruger/client/divisions'
+require 'kruger/client/vacancies'
+require 'kruger/client/users'
+require 'kruger/client/request'
+require 'kruger/client/response'
+require 'kruger/client/skills'
+require 'kruger/client/cities'
+require 'kruger/client/companies'
+require 'kruger/client/divisions'
 
 module Kruger
   class Client
