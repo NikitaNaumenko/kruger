@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require '/kruger/client/vacancies'
+require 'kruger/client/vacancies'
 require 'kruger/client/users'
 require 'kruger/client/request'
 require 'kruger/client/response'
