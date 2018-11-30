@@ -3,9 +3,6 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/4a4d18f954b765173a3a/maintainability)](https://codeclimate.com/github/NikitaNaumenko/kruger/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/4a4d18f954b765173a3a/test_coverage)](https://codeclimate.com/github/NikitaNaumenko/kruger/test_coverage)
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/kruger`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
 
 ## Installation
 
