@@ -3,6 +3,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/4a4d18f954b765173a3a/maintainability)](https://codeclimate.com/github/NikitaNaumenko/kruger/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/4a4d18f954b765173a3a/test_coverage)](https://codeclimate.com/github/NikitaNaumenko/kruger/test_coverage)
 
+Api client for [moi krug](https://moikrug.ru/)
 
 ## Installation
 
@@ -22,7 +23,58 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+With Kruger you can manipulate Moi Krug entities: Vacancies, Users, Companies, Skills, etc. More information [there](https://moikrug.ru/info/api)
+Kruger have methods for each other endpoint.
+
+### Auth configuration
+Kruger uses env var for configuration `access_token`, so you can pass `access_token`  for client class. 
+
+Required params: `access_token`.
+
+Example:
+```ruby
+client = Kruger::Client.new(access_token: @access_token)
+```
+
+
+### Response
+
+You can use methods `body` for get response body, `success?` for check successful response and `status` for check response status
+
+Example:
+```ruby
+client.whoami.success?
+true
+
+client.whoami.body
+{ "login"=>"naumenkoniki",
+  "email"=>"naumenkoniki@gmail.com",
+  "first_name"=>"Nikita",
+  "last_name"=>"Naumenko",
+  "middle_name"=>nil,
+  "birthday"=>nil,
+  "avatar"=>nil,
+  "location"=>{"city"=>nil, "country"=>nil},
+  "gender"=>"male"
+}
+client.whoami.status
+200
+```
+
+### Endpoints
+
+#### Vacancies
+
+#### Users
+
+#### Skills
+
+#### Divisions
+
+#### Companies
+
+#### Cities
+
 
 ## Development
 
